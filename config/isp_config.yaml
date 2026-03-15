@@ -1,0 +1,69 @@
+# -------------------- ISP Module Enable/Disable --------------------
+enable:                
+  BPC: True  
+  LCS: false            
+  BLC: True  
+  AAF: True  
+  AWB: True
+  BNR: False     
+  CFA: True
+  CCM: False
+  GTM: False
+  GMC: False
+  R2Y: False
+  CNR: True
+  EE:  True
+  BCC: False
+  HSC: False        
+  Y2R: False
+
+# -------------------- Algorithm Params --------------------
+RAW_img_path: C:\Users\w1594\Desktop\ez_ISP-main\ez_ISP-main\ez_ISP-main\day-02020.raw # RAW image path， please change to your own path
+RAW_Height: 1856
+RAW_Width: 2880
+white_level: 1024
+bayer_pattern: BGGR
+
+
+bad_pixel_threshold: 30
+
+LCS: ~
+
+black_level_r: 200.0
+black_level_gr: 200.0
+black_level_gb: 200.0
+black_level_b: 200.0
+alpha: 1.        
+beta: 1.                  
+
+AAF: ~
+
+r_gain: 2.0      
+b_gain: 2.0     
+
+BNR_method: 'bilateral'
+
+CFA_method: 'opencv'
+
+ccm_matrix:
+    - [1.0, 0, -0]
+    - [0, 1, 0]
+    - [0, 0, 1 ]
+
+GTM_method: 'smoothstep'
+
+gamma: 2.0
+
+R2T: ~
+
+CNR_method: 'gaussian'
+CNR_threshold: 0.5
+
+edge_enhancement_strength: 0.5
+
+BCC_contrast: 0.3
+BCC_brightness: 5
+
+HSC: ~
+
+Y2R: ~
